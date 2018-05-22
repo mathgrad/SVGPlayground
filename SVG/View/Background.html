@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bird Background</title>
+		<link rel="stylesheet" type="text/css" href="../Style/Base.css" />
+		<meta charset="UTF-8">
+		<meta name="description" content="Josh's Bird Background">
+		<meta name="keywords" content="Bird, SVG, animation">
+		<meta name="author" content="Joshua Crager">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body style="overflow:hidden; background: radial-gradient(circle, white 5%, gold 100%);">
+		<svg width="100vw" height="100vh">
+			<style>
+				#wing{fill:#81CCAA;}
+				#body{fill:#B8E4C2;}
+				#pupil{fill:#1F2600;}
+				#beak{fill:#F69C0D;}
+				.eye-ball{fill:#F6FDC4;}
+			</style>
+			<defs>
+				<pattern id="pattern" x="0" y="0" width=".85" height=".125">
+					<g id="bird">
+						<g id="body">
+							<path d="M48.42,78.11c0-17.45,14.14-31.58,31.59-31.58s31.59,14.14,31.59,31.58c0,17.44-14.14,31.59-31.59,31.59 S48.42,95.56,48.42,78.11"/>
+							<path d="M109.19,69.88c0,0-8.5-27.33-42.51-18.53c-34.02,8.81-20.65,91.11,45.25,84.73c40.39-3.65,48.59-24.6,48.59-24.6S124.68,106.02,109.19,69.88"/>
+							<path id="wing" d="
+							M105.78,75.09
+							c1.56,0,8.84,1.13,12.62,3.11
+							c0,0,0.01-0.01,0.01-0.01
+							l36.23,12.38
+							c0,0-13.78,30.81-41.96,38.09
+							c-1.51,0.39-2.82,0.59-3.99,0.62
+							c-0.96,0.1-1.92,0.16-2.9,0.16
+							c-15.01,0-27.17-12.17-27.17-27.17
+							C78.61,87.26,90.78,75.09,105.78,75.09" />
+								<animateTransform xlink:href="#wing" attributeName="transform" attributeType="XML" type="rotate" values="0, 105.78, 75.09;30, 100.75, 90.09;0, 105.78, 75.09" dur="3s" repeatCount="indefinite" begin="0s;"/>
+						</g>
+						<g id="head">
+							<path id="beak" d="M50.43,68.52c0,0-8.81,2.58-10.93,4.86l9.12,9.87C48.61,83.24,48.76,74.28,50.43,68.52" />
+							<path class="eye-ball" d="M60.53,71.68c0-6.33,5.13-11.46,11.46-11.46c6.33,0,11.46,5.13,11.46,11.46c0,6.33-5.13,11.46-11.46,11.46C65.66,83.14,60.53,78.01,60.53,71.68" />
+							<path id="pupil" d="M64.45,71.68c0-4.16,3.38-7.53,7.54-7.53c4.16,0,7.53,3.37,7.53,7.53c0,4.16-3.37,7.53-7.53,7.53C67.82,79.22,64.45,75.84,64.45,71.68" />
+							<path class="eye-ball" d="M72.39,74.39c0-2.73,2.22-4.95,4.95-4.95c2.73,0,4.95,2.21,4.95,4.95c0,2.74-2.22,4.95-4.95,4.95C74.6,79.34,72.39,77.13,72.39,74.39" />
+						</g>
+					</g>
+				</pattern>
+				<pattern id="flip" x="0" y="0" width=".85" height=".125">
+					<use xlink:href="#bird" transform="scale(-1, 1) translate(-100, 0)"/>
+				</pattern>
+				<animateTransform xlink:href="#right0" attributeName="transform" attributeType="XML" type="translate" values="950,0; -1000,0" dur="10s" repeatCount="indefinite" begin="0s"/>
+				<animateTransform xlink:href="#right1" attributeName="transform" attributeType="XML" type="translate" values="950,0; -1000,0" dur="10s" repeatCount="indefinite" begin="1s"/>
+				<animateTransform xlink:href="#right2" attributeName="transform" attributeType="XML" type="translate" values="950,0; -1000,0" dur="10s" repeatCount="indefinite" begin="2s"/>
+				<animateTransform xlink:href="#right3" attributeName="transform" attributeType="XML" type="translate" values="950,0; -1000,0" dur="10s" repeatCount="indefinite" begin="3s"/>
+				<animateTransform xlink:href="#right4" attributeName="transform" attributeType="XML" type="translate" values="950,0; -1000,0" dur="10s" repeatCount="indefinite" begin="4s"/>
+				<animateTransform xlink:href="#left0" attributeName="transform" attributeType="XML" type="translate" values="-1050,0; 1000,0" dur="10s" repeatCount="indefinite" begin="0s"/>
+				<animateTransform xlink:href="#left1" attributeName="transform" attributeType="XML" type="translate" values="-1050,0; 1000,0" dur="10s" repeatCount="indefinite" begin="1s"/>
+				<animateTransform xlink:href="#left2" attributeName="transform" attributeType="XML" type="translate" values="-1050,0; 1000,0" dur="10s" repeatCount="indefinite" begin="2s"/>
+				<animateTransform xlink:href="#left3" attributeName="transform" attributeType="XML" type="translate" values="-1050,0; 1000,0" dur="10s" repeatCount="indefinite" begin="3s"/>
+				<animateTransform xlink:href="#left4" attributeName="transform" attributeType="XML" type="translate" values="-1050,0; 1000,0" dur="10s" repeatCount="indefinite" begin="4s"/>
+			</defs>
+			<rect class="rec" id="right0" x="0" y="0" width="5vw" height="100vh" fill="url(#pattern)" />
+			<rect class="rec" id="right1" x="0" y="0" width="5vw" height="100vh" fill="url(#pattern)" />
+			<rect class="rec" id="right2" x="0" y="0" width="5vw" height="100vh" fill="url(#pattern)" />
+			<rect class="rec" id="right3" x="0" y="0" width="5vw" height="100vh" fill="url(#pattern)" />
+			<rect class="rec" id="right4" x="0" y="0" width="5vw" height="100vh" fill="url(#pattern)" />
+			
+			<rect class="rec" id="left0" x="100vw" y="0" width="5vw" height="100vh" fill="url(#flip)"/>
+			<rect class="rec" id="left1" x="100vw" y="0" width="5vw" height="100vh" fill="url(#flip)"/>
+			<rect class="rec" id="left2" x="100vw" y="0" width="5vw" height="100vh" fill="url(#flip)"/>
+			<rect class="rec" id="left3" x="100vw" y="0" width="5vw" height="100vh" fill="url(#flip)"/>
+			<rect class="rec" id="left4" x="100vw" y="0" width="5vw" height="100vh" fill="url(#flip)"/>
+		</svg>
+		<div id="message">
+			<p>Congratulations,</p>
+			<p>You succeeded, today!</p>
+		</div>
+	</body>
+</html>

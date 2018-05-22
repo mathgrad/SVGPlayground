@@ -1,0 +1,179 @@
+.mountain{
+	stroke:black;
+	stroke-width:1;
+}
+
+#bird{
+	transform: scale(.5);
+}
+
+#lips{
+	stroke:black;
+	stroke-width:5;
+	fill:none;
+	
+	animation-name: smile;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#message{
+    z-index: 1;
+    width: 20em;
+    height: 5em;
+    text-align: center;
+    font-size: 32pt;
+    font-weight: bolder;
+    position: fixed;
+    top: calc(50vh - 2.5em);
+    left: calc(50vw - 10em);
+    margin: auto;
+    padding: 0px;
+	opacity: 0;
+	color: white;
+	text-shadow: 0 0 1em black;
+	border-radius: 50%;
+	
+	animation-name: delayFade;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 5s;
+}
+
+.rec{
+	opacity: 0;
+}
+
+#right0{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+}
+
+#right1{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+#right2{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+
+#right3{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+}
+
+#right4{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 4s;
+}
+
+#left0{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+}
+
+#left1{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+#left2{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+
+#left3{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+}
+
+#left4{
+	animation-name: fadeinout;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 4s;
+}
+
+@keyframes fadeinout{
+	0%{
+		opacity: 0;
+	}
+	
+	10%{
+		opacity: 1;
+	}
+	
+	40%{
+		opacity: 1;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes delayFade{
+	0%{
+		opacity: 0;
+	}
+	
+	20%{
+		opacity: 1;
+	}
+	
+	30%{
+		opacity: 1;
+	}
+	
+	50%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes smile{
+	0%{
+		d: path("M100,300 C100,300 295,300 295,300");
+	}
+	50%{
+		d: path("M100,300 C100,375 295,375 295,300");
+	}
+	100%{
+		d: path("M100,300 C100,300 295,300 295,300");
+	}
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mountain</title>
+		<link rel="stylesheet" type="text/css" href="../Style/Base.css" />
+		<meta charset="UTF-8">
+		<meta name="description" content="Josh's Mountain Drawing">
+		<meta name="keywords" content="mountain, css, css3, animation">
+		<meta name="author" content="Joshua Crager">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<svg width="233px" height="64px">
+			<linearGradient id="grad1" x1="0%" y1="35%" x2="0%" y2="100%">
+				<stop offest="0%"
+					style="stop-color:white; stop-opacity:1" />
+				<stop offset="100%"
+					style="stop-color:black; stop-opacity:1" />
+			</linearGradient>
+			<polygon class="mountain" points="1,62 34,33 43,31 64,26 72,34 111,1 134,26 151,15 178,39 199,32 229,60" style="fill:url(#grad1);" />
+		</svg>
+		
+		<svg width="50vw" height="50vh" viewBox="0 0 572.06 200">
+			<style>
+				svg{background-color:white;}
+				#wing{fill:#81CCAA;}
+				#body{fill:#B8E4C2;}
+				#pupil{fill:#1F2600;}
+				#beak{fill:#F69C0D;}
+				.eye-ball{fill:#F6FDC4;}
+			</style>
+<!-- 			<pattern id="Pattern"> -->
+			<g id="bird">
+				<g id="body">
+					<path d="M48.42,78.11c0-17.45,14.14-31.58,31.59-31.58s31.59,14.14,31.59,31.58c0,17.44-14.14,31.59-31.59,31.59 S48.42,95.56,48.42,78.11"/>
+					<path d="M109.19,69.88c0,0-8.5-27.33-42.51-18.53c-34.02,8.81-20.65,91.11,45.25,84.73c40.39-3.65,48.59-24.6,48.59-24.6S124.68,106.02,109.19,69.88"/>
+					<path id="wing" d="
+					M105.78,75.09
+					c1.56,0,8.84,1.13,12.62,3.11
+					c0,0,0.01-0.01,0.01-0.01
+					l36.23,12.38
+					c0,0-13.78,30.81-41.96,38.09
+					c-1.51,0.39-2.82,0.59-3.99,0.62
+					c-0.96,0.1-1.92,0.16-2.9,0.16
+					c-15.01,0-27.17-12.17-27.17-27.17
+					C78.61,87.26,90.78,75.09,105.78,75.09" />
+						<animateTransform id="anim1" xlink:href="#wing" attributeName="transform" attributeType="XML" type="rotate" values="0, 105.78, 75.09;30, 100.75, 90.09;0, 105.78, 75.09" dur="3s" repeatCount="indefinite" begin="0s; anim2.end"/>
+				</g>
+				<g id="head">
+					<path id="beak" d="M50.43,68.52c0,0-8.81,2.58-10.93,4.86l9.12,9.87C48.61,83.24,48.76,74.28,50.43,68.52" />
+					<path class="eye-ball" d="M60.53,71.68c0-6.33,5.13-11.46,11.46-11.46c6.33,0,11.46,5.13,11.46,11.46c0,6.33-5.13,11.46-11.46,11.46C65.66,83.14,60.53,78.01,60.53,71.68" />
+					<path id="pupil" d="M64.45,71.68c0-4.16,3.38-7.53,7.54-7.53c4.16,0,7.53,3.37,7.53,7.53c0,4.16-3.37,7.53-7.53,7.53C67.82,79.22,64.45,75.84,64.45,71.68" />
+					<path class="eye-ball" d="M72.39,74.39c0-2.73,2.22-4.95,4.95-4.95c2.73,0,4.95,2.21,4.95,4.95c0,2.74-2.22,4.95-4.95,4.95C74.6,79.34,72.39,77.13,72.39,74.39" />
+				</g>
+			</g>
+<!-- 			</pattern>
+			<rec fill="url(#Pattern)"/> -->
+			<use xlink:href="#bird" transform="translate(0, -50)"/>
+			<use xlink:href="#bird" transform="translate(75, -50)"/>
+			<use xlink:href="#bird" transform="translate(150, -50)"/>
+			<use xlink:href="#bird" transform="translate(225, -50)"/>
+			<use xlink:href="#bird" transform="translate(300, -50)"/>
+			<use xlink:href="#bird" transform="translate(375, -50)"/>
+			<use xlink:href="#bird" transform="translate(450, -50)"/>
+			<use xlink:href="#bird" transform="translate(75, 0)"/>
+			<use xlink:href="#bird" transform="translate(150, 0)"/>
+			<use xlink:href="#bird" transform="translate(225, 0)"/>
+			<use xlink:href="#bird" transform="translate(300, 0)"/>
+			<use xlink:href="#bird" transform="translate(375, 0)"/>
+			<use xlink:href="#bird" transform="translate(450, 0)"/>
+			<use xlink:href="#bird" transform="translate(0, 50)"/>
+			<use xlink:href="#bird" transform="translate(75, 50)"/>
+			<use xlink:href="#bird" transform="translate(150, 50)"/>
+			<use xlink:href="#bird" transform="translate(225, 50)"/>
+			<use xlink:href="#bird" transform="translate(300, 50)"/>
+			<use xlink:href="#bird" transform="translate(375, 50)"/>
+			<use xlink:href="#bird" transform="translate(450, 50)"/>
+			<use xlink:href="#bird" transform="translate(0, 100)"/>
+			<use xlink:href="#bird" transform="translate(75, 100)"/>
+			<use xlink:href="#bird" transform="translate(150, 100)"/>
+			<use xlink:href="#bird" transform="translate(225, 100)"/>
+			<use xlink:href="#bird" transform="translate(300, 100)"/>
+			<use xlink:href="#bird" transform="translate(375, 100)"/>
+			<use xlink:href="#bird" transform="translate(450, 100)"/>
+			<use xlink:href="#bird" transform="translate(0, 150)"/>
+			<use xlink:href="#bird" transform="translate(75, 150)"/>
+			<use xlink:href="#bird" transform="translate(150, 150)"/>
+			<use xlink:href="#bird" transform="translate(225, 150)"/>
+			<use xlink:href="#bird" transform="translate(300, 150)"/>
+			<use xlink:href="#bird" transform="translate(375, 150)"/>
+			<use xlink:href="#bird" transform="translate(450, 150)"/>
+		</svg>
+		
+		<svg width="400" height="400">
+			<style>
+				svg{background-color:black;}
+				#face{fill:yellow;}
+				.eye{fill:white;}
+			</style>
+			<circle id="face" cx="200" cy="200" r="200"/>
+			<circle id="eye" class="eye" cx="100" cy="110" r="50"/>
+			<use xlink:href="#eye" transform="translate(195,0)"/>
+			<circle id="fpupil" cx="100" cy="110" r="25" />
+			<use xlink:href="#fpupil" transform="translate(195,0)" />
+			<path id="lips" d="M100,300 C100,300 295,300 295,300" />
+		</svg>
+	</body>
+</html>
